@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run build:*)",
+      "Bash(npm install:*)",
+      "Bash(timeout 10 npm run dev:*)",
+      "Bash(curl:*)",
+      "Bash(findstr:*)",
+      "Bash(taskkill:*)",
+      "Bash(Remove-Item -Force \"M:\\\\Claude\\\\ig-carousel-gen\\\\.next\\\\dev\\\\lock\")",
+      "Bash(del /F \"M:\\\\Claude\\\\ig-carousel-gen\\\\.next\\\\dev\\\\lock\")",
+      "Bash(npx tsc:*)",
+      "Bash(if exist .next rmdir /s /q .next)",
+      "Bash(npx next dev:*)",
+      "Bash(npx kill-port:*)",
+      "Bash(rd /s /q \"m:\\\\Claude\\\\ig-carousel-gen\\\\.next\")",
+      "Bash(powershell -Command \"Start-Sleep -Seconds 2; Remove-Item -Recurse -Force ''m:\\\\Claude\\\\ig-carousel-gen\\\\.next'' -ErrorAction SilentlyContinue; Write-Host ''cleaned''\")",
+      "Bash(powershell -Command \"\\(Invoke-WebRequest -Uri ''http://localhost:3007'' -UseBasicParsing -TimeoutSec 30\\).StatusCode\")",
+      "Bash(powershell -Command \"Remove-Item -Recurse -Force 'm:\\\\Claude\\\\ig-carousel-gen\\\\.next' -ErrorAction SilentlyContinue; Write-Host 'cleaned'\":*)",
+      "Bash(node -e:*)",
+      "Bash(node:*)",
+      "Bash(powershell -Command \"Get-Process -Name ''node'' -ErrorAction SilentlyContinue | Where-Object { $_Id -eq 139860 } | Stop-Process -Force -ErrorAction SilentlyContinue; Start-Sleep -Seconds 3; Remove-Item -Recurse -Force ''m:\\\\Claude\\\\ig-carousel-gen\\\\.next'' -ErrorAction SilentlyContinue; Write-Host ''done''\")",
+      "Bash(powershell -Command \"Start-Sleep 3; Remove-Item -Recurse -Force ''m:\\\\Claude\\\\ig-carousel-gen\\\\.next'' -ErrorAction SilentlyContinue; Write-Host ''cleaned''\")",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git reset:*)"
+    ]
+  }
+}
